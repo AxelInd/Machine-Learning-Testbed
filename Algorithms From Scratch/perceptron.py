@@ -17,7 +17,9 @@ class perceptron (object):
         
     def process(self,_input):
         #h = x_1 * w_1 + ... + x_n * w_n
-        total = sum(_input*self.weights)
+        total = (np.dot(_input,weights))
+        #dot product can also be expressed by:
+        #total = sum(_input*self.weights)
         return self.activationFunction(total)
     def update (self, _input, target, learningRate=0.4):
         #update rule: w_i = w_i + learning rate * (target-output)*x_i
@@ -29,8 +31,8 @@ if __name__ == "__main__":
     target = 1
     _input = _input/sum(_input)
     weights = np.random.rand(len(_input))
-    print (weights)
-    print (_input)
+    print ("Initial Weights",weights)
+    print ("Normalisedc Input",_input)
     p = perceptron(weights)
     
     output = p.process(_input)
@@ -43,3 +45,4 @@ if __name__ == "__main__":
         p.update(_input,target,LEARNINGRATE)
     output = p.process(_input)
     print ("Trained Output is ", output)
+    
