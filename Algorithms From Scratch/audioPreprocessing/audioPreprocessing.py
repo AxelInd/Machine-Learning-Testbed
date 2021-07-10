@@ -42,6 +42,9 @@ fft=np.fft.fft(signal)
 #is defined as the distance between the origin (0,0) and the point (a,b) in 
 #the complex plane."
 magnitude=np.abs(fft)
+#np.linspace() creates a specified number of equally sized intervals
+#e.g np.linspace(1, 100, num=100, endpoint=True, retstep=False, dtype=None, axis=0)
+# will return a hundred intervals between 1 and 100
 frequency = np.linspace(0,sr,len(magnitude))
 
 """
@@ -92,9 +95,9 @@ plt.colorbar()
 #MFCCs: Mel Frequency Capstral Coefficients
 #n_mfcc how many coefficents we want
 # MFCCs start with an fft
-MFFCs = librosa.feature.mfcc(signal, n_fft=n_fft,sr=sr, hop_length=hop_length, n_mfcc=13)
+MFCCs = librosa.feature.mfcc(signal, n_fft=n_fft,sr=sr, hop_length=hop_length, n_mfcc=13)
 
-librosa.display.specshow(MFFCs, sr=sr, hop_length = hop_length)
+librosa.display.specshow(MFCCs, sr=sr, hop_length = hop_length)
 plt.xlabel("Time")
 plt.ylabel("Frequency")
 plt.colorbar()
