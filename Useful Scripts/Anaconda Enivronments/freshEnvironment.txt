@@ -1,0 +1,4 @@
+conda create -n myenv python=3.6
+conda install -c anaconda scikit-learn 
+conda install -c conda-forge librosa
+conda install -c anaconda tensorflow-gpu
