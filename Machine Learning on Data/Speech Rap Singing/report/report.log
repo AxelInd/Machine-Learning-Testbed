@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.12)  14 JUL 2021 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.12)  15 JUL 2021 11:45
 entering extended mode
 **./report.tex
 (report.tex
@@ -144,15 +144,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(43.36243pt, 527.57014pt, 43.36243pt)
-* v-part:(T,H,B)=(43.36243pt, 708.24513pt, 43.36243pt)
+* h-part:(L,W,R)=(50.58878pt, 513.11745pt, 50.58878pt)
+* v-part:(T,H,B)=(50.58878pt, 693.79243pt, 50.58878pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=527.57014pt
-* \textheight=708.24513pt
-* \oddsidemargin=-28.90756pt
-* \evensidemargin=-28.90756pt
-* \topmargin=-65.90756pt
+* \textwidth=513.11745pt
+* \textheight=693.79243pt
+* \oddsidemargin=-21.68121pt
+* \evensidemargin=-21.68121pt
+* \topmargin=-58.68121pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -187,16 +187,16 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-<accuracyMeasures.png, id=1, 1084.05pt x 433.62pt>
-File: accuracyMeasures.png Graphic file (type png)
-<use accuracyMeasures.png>
-Package pdftex.def Info: accuracyMeasures.png  used on input line 40.
-(pdftex.def)             Requested size: 527.57014pt x 211.03326pt.
 
 [1
 
-{C:/Users/axelt/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2 <./accuracyM
-easures.png>] (report.aux) ) 
+{C:/Users/axelt/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+<accuracyMeasures.png, id=12, 1084.05pt x 505.89pt>
+File: accuracyMeasures.png Graphic file (type png)
+<use accuracyMeasures.png>
+Package pdftex.def Info: accuracyMeasures.png  used on input line 45.
+(pdftex.def)             Requested size: 513.11745pt x 239.45883pt.
+ [2 <./accuracyMeasures.png>] (report.aux) ) 
 Here is how much of TeX's memory you used:
  1928 strings out of 479334
  29997 string characters out of 2857084
@@ -204,18 +204,18 @@ Here is how much of TeX's memory you used:
  19394 multiletter control sequences out of 15000+200000
  409451 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,74p,439b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\axelt\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/axelt/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/axelt/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/axelt/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/axelt/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/a
-xelt/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/axelt/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
-12.pfb><C:/Users/axelt/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmtt12.pfb>
-Output written on report.pdf (2 pages, 142641 bytes).
+ 68i,6n,74p,457b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\axelt\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/axelt/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/axelt/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/a
+xelt/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Users/axelt/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><C:/Users/axelt/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Users/axelt/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmti12.pfb><C:/Users/axelt/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (2 pages, 136567 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

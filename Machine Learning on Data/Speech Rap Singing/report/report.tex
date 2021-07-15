@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{blindtext}
 \usepackage{graphicx}
-\usepackage[margin=0.6in]{geometry}
+\usepackage[margin=0.7in]{geometry}
 \title{Deep Learning for Spech-Rap-Singing Audio Classification}
 \date{\today}
 \author{Axel Ind, Msc. Computer Science}
@@ -9,7 +9,7 @@
 \maketitle
 
 \section*{Abstract}
-I have implemented two different deep learning architecture to learn the 3-output classification of 3 second music clips with a $16kHz$ sample rate. Implementations make use of Librosa for audio-preprocessing, and the Keras environment for model implementation. Labels are learned with a 13-variable MFCC as input data. Results achieved are: 98\%, 89\% accuracy on test data for the CNN and MLP respectively.
+I have implemented three different deep learning architecture to learn the 3-output classification of 3 second music clips with a $16kHz$ sample rate. Implementations make use of Librosa for audio-preprocessing, and the Keras environment for model implementation. Labels are learned with a 13-variable MFCC as input data. Results achieved are: 92\%, 81\%, and 70\% accuracy on test data for the CNN, MLP and LSTM respectively.
 
 \section{Audio-Preprocessing}
 \begin{enumerate}
@@ -34,34 +34,44 @@ I have implemented two different deep learning architecture to learn the 3-outpu
 \end{itemize}
 \item Layer 3: Dense Layer (relu, dropout) with 64 nodes.
 \item Layer 4: Output Layer (3 nodes, softmax)
-
+\end{itemize}
+\subsection{Long Short Term Memory Network}
+\begin{itemize}
+\item Layer 1-2: LSTM (tanh) with 64 nodes.
+\item layer 3: Dense Layer (relu,dropout) with 64 nodes.
+\item Layer 4: Output Layer (3 nodes, softmax)
 \end{itemize}
 \section{Results}
-\includegraphics[width= \textwidth]{accuracyMeasures.png}
+\includegraphics[width= 1.00 \textwidth]{accuracyMeasures.png}
 \subsection{CNN Results}
-With $\mu=0.0001, \bar{t}=5.42s$
+With $\mu=0.0001, \bar{t}=3.23s$
 \begin{itemize}
-\item \textbf{Average Accuracy}: 94.657\%
-\item \textbf{Max Accuracy}: 99\%
+\item \textbf{Average Accuracy (preserved samples}: 92.31\%
+\item \textbf{Average Accuracy (randomised samples}: 94.56\%
 \end{itemize}
 
 \subsection{Dense Network Results}
-With $\mu=0.0001, \textit{dropout}=0.1, \bar{t}=4.58s$
+With $\mu=0.0001, \textit{dropout}=0.1, \bar{t}=13.15s$
 \begin{itemize}
-\item \textbf{Average Accuracy}: 89.657\%
-\item \textbf{Max Accuracy}: 95.735\%
+\item \textbf{Average Accuracy (preserved samples}: 81.72\%
+\item \textbf{Average Accuracy (randomised samples}: 86.657\%
+\end{itemize}
+
+\subsection{LSTM Network Results}
+With $\mu=0.0001, \bar{t}=48.26s$
+\begin{itemize}
+\item \textbf{Average Accuracy (preserved samples}: 70.43\%
+\item \textbf{Average Accuracy (randomised samples}: 92.31\%
 \end{itemize}
 
 
-
-\section{Limitations}
-\begin{itemize}
-\item Training can currently include different features from the same person's voice as the test set.
-\item The amount of training data currently available is rather limited. Perturbating the existing data could potentially increase accuracy.
-\item Hyper-parameter optimisation will be necessary.
-\item An LSTM solution was implemented but does not run in \texttt{Python 3.8} and I am still troubleshooting compatibility.
-
-\end{itemize}
+%\section{Limitations}
+%\begin{itemize}
+%\item Training can currently include different features from the same person's voice as the test set.
+%\item The amount of training data currently available is rather limited. Perturbating the existing data could potentially increase accuracy.
+%\item Hyper-parameter optimisation will be necessary.
+%\item An LSTM solution was implemented but does not run in \texttt{Python 3.8} and I am still troubleshooting compatibility.
+%\end{itemize}
 
 
 
